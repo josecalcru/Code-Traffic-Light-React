@@ -23,7 +23,7 @@ export function TrafficLight() {
 		//nothing happens
 	}
 	return (
-		<div className="container-fluid justify-content-center">
+		<div className="col-3 justify-content-center box mx-auto">
 			<div className={"red " + redstatus} onClick={() => setColor("red")}>
 				{" "}
 			</div>

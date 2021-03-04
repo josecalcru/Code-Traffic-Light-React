@@ -11,25 +11,36 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.box{
+    background:black;
+    border-radius: 10px;
+}
 .selected{
-    background:purple !important;
+    //background:purple !important;
+box-shadow: inset -1px 1px 5px 9px gold;
 }
 .red{
     background-color: red;
   border-radius: 100%;
       height: 20rem;
     width: 20rem;
+    margin: auto;
 }
+
 .green{
     background-color: green;
      height: 20rem;
     width: 20rem;
     border-radius: 100%;
+    margin: auto;
 }
 .yellow{
     background-color: yellow;
     border-radius: 100%;
      height: 20rem;
     width: 20rem;
+    margin: auto;
+
 }
 
