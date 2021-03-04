@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 //create your first component
 export function TrafficLight() {
+	const [color, setColor] = useState("red");
+	let redstatus = undefined;
+	let greenstatus = undefined;
+	let yellowstatus = undefined;
+
+	if (color === "red") {
+		redstatus = "selected";
+	} else {
+		//nothing happens
+	}
+	if (color === "green") {
+		greenstatus = "selected";
+	} else {
+		//nothing happens
+	}
+	if (color === "yellow") {
+		yellowstatus = "selected";
+	} else {
+		//nothing happens
+	}
 	return (
-		<div className="container">
-			<div className="color red"> 1</div>
-			<div className="color yellow"> 1</div>
-			<div className="color green">1 </div>
+		<div className="container-fluid justify-content-center">
+			<div className={"red " + redstatus} onClick={() => setColor("red")}>
+				{" "}
+			</div>
+			<div
+				className={"yellow " + yellowstatus}
+				onClick={() => setColor("yellow")}>
+				{" "}
+			</div>
+			<div
+				className={"green " + greenstatus}
+				onClick={() => setColor("green")}>
+				{" "}
+			</div>
 		</div>
 	);
 }
